@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ZeitplUN</string>
+    <string name="nuevohorario">NUEVO HORARIO</string>
+    <string name="cargarhorario">CARGAR HORARIO</string>
+    <string name="ZetplUN">ZeitplUN</string>
+    <string name="Agregarmateria">AGREGAR MATERIA</string>
+    <string name="Volver">VOlVEr</string>
+    <string name="crearhorario">GUARDAR HORARIO</string>
+    <string name="Materiasincritas">MATERIAS A CURSAR</string>
+    <string name="lunes">LUN</string>
+    <string name="martes">MAR</string>
+    <string name="miercoles">MIE</string>
+    <string name="jueves">JUE</string>
+    <string name="viernes">VIE</string>
+    <string name="SABADO">SAB</string>
+    <string name="h1">01:00</string>
+    <string name="h2">02:00</string>
+    <string name="h3">03:00</string>
+    <string name="h4">04:00</string>
+    <string name="h5">05:00</string>
+    <string name="h6">06:00</string>
+    <string name="h7">07:00</string>
+    <string name="h8">08:00</string>
+    <string name="h9">09:00</string>
+    <string name="h10">10:00</string>
+    <string name="h11">11:00</string>
+    <string name="h12">12:00</string>
+    <string name="h13">13:00</string>
+    <string name="h14">14:00</string>
+    <string name="h15">15:00</string>
+    <string name="h16">16:00</string>
+    <string name="h17">17:00</string>
+    <string name="h18">18:00</string>
+    <string name="h19">19:00</string>
+    <string name="h20">20:00</string>
+    <string name="h21">21:00</string>
+    <string name="h22">22:00</string>
+    <string name="h23">23:00</string>
+    <string name="h24">24:00</string>
+    <string name="h0">00:00</string>
+    <string name="m1">Ingles</string>
+    <string name="g1">Grupo 1</string>
+    <string name="g2">Grupo 2</string>
+    <string name="g3">Grupo 3</string>
+    <string name="ei">Fotoperrona</string>
+    <string name="materia">""</string>
+    <string name="edittx">" Ingrese las datos de la materia."</string>
+    <string name="sad1">1</string>
+    <string name="Tengomiedo">Materias a cursar</string>
+
+
+
+
+
+
+
+
+
+</resources>
