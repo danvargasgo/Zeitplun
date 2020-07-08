@@ -9,6 +9,7 @@ import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -25,10 +26,7 @@ public class Horario extends AppCompatActivity {
     int bthorario;
     String[] materias;
     String[] materia1;
-    ArrayList<String> Nm=new ArrayList<String>();
-
-
-
+    ArrayList<String> Nm = new ArrayList<String>();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,31 +44,26 @@ public class Horario extends AppCompatActivity {
         Grupos.add("Grupo1");
         Grupos.add("Grupo 2");
 
-
-
-
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, Grupos);
         Grupos1.setAdapter(adapter);
-
 
         for (int x = 0; x < Nm.size(); x++) {
             Button myButton = new Button(this);
             myButton.setText(Nm.get(x));//Adentro de los parentesis deberia ir: Nm.get(x).get(0)
-            LinearLayout ll=new LinearLayout(this);
+            LinearLayout ll = new LinearLayout(this);
+            myButton.setLayoutParams(new LinearLayout.LayoutParams(20, 10));
 
-
-            if (materias2[x]==1) {
-                 ll = findViewById(R.id.hora0);
-            } else if (materias2[x]==2) {
+            if (materias2[x] == 1) {
+                ll = findViewById(R.id.hora0);
+            } else if (materias2[x] == 2) {
                 ll = findViewById(R.id.hora1);
-            }else if (materias2[x]==3) {
+            } else if (materias2[x] == 3) {
                 ll = findViewById(R.id.hora2);
-            }else if (materias2[x]==4) {
+            } else if (materias2[x] == 4) {
                 ll = findViewById(R.id.hora3);
-            }else if (materias2[x]==5) {
+            } else if (materias2[x] == 5) {
                 ll = findViewById(R.id.hora4);
-            }else if (materias2[x]==6) {
+            } else if (materias2[x] == 6) {
                 ll = findViewById(R.id.hora5);
             }
 
@@ -86,18 +79,13 @@ public class Horario extends AppCompatActivity {
             });
         }
 
-
     }
-
-
-
-
-
 
     public void openActivity2(View view) {
         Intent intent = new Intent(this, CrearHorario.class);
         startActivity(intent);
     }
+
     public void Aparecergrupos() {
         if (Grupos1.getVisibility() == INVISIBLE) {
             Grupos1.setVisibility(View.VISIBLE);
@@ -108,14 +96,4 @@ public class Horario extends AppCompatActivity {
 
         }
     }
-
-    public void Prueba(View view) {
-
-            }
-        }
-
-
-
-
-
-
+}
