@@ -18,7 +18,6 @@ public class CrearHorario extends AppCompatActivity {
     int numaterias;
     WebView pagina;
     EditText Datosmaterias;
-    String[] materias13 = {"Ingles", "Calculo"};
     Scanner sc = new Scanner(System.in);
     ArrayList<String> materias = new ArrayList<String>();
     String linea = null;
@@ -29,9 +28,9 @@ public class CrearHorario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_crear_horario);
-        Datosmaterias=(EditText)findViewById(R.id.Datosmaterias);
+        Datosmaterias = findViewById(R.id.Datosmaterias);
 
-        pagina = (WebView) findViewById(R.id.wv);
+        pagina = findViewById(R.id.wv);
 
         pagina.setWebViewClient(new WebViewClient());
         pagina.getSettings().setJavaScriptEnabled(true);
@@ -62,9 +61,8 @@ public class CrearHorario extends AppCompatActivity {
         //    Toast.makeText(this, "Datos ingresados incorrectos", Toast.LENGTH_LONG).show();
        // }
         else{
-          //  materias13[numaterias] = partes.get(4);
             NombreDeLasMaterias.add(partes.get(4));
-
+          //  materias13[numaterias] = partes.get(4);
           /*  ArrayList<String>NDLM=new ArrayList<String>();
             int x = 4;
             while (x < partes.size()) {
@@ -84,10 +82,7 @@ public class CrearHorario extends AppCompatActivity {
             11-22 grupo 1;
             23-34 grupo 2 ;
             35 prerequisitos ;
-
-
             */
-
             }
 
             Toast.makeText(this, partes.get(4) + " agregada", Toast.LENGTH_LONG).show();

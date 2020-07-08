@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
@@ -49,9 +50,10 @@ public class Horario extends AppCompatActivity {
 
         for (int x = 0; x < Nm.size(); x++) {
             Button myButton = new Button(this);
-            myButton.setText(Nm.get(x));//Adentro de los parentesis deberia ir: Nm.get(x).get(0)
+            String subcadena = Nm.get(x).substring(0,4) + '\n' + Nm.get(x).substring(4,8) + '\n' + Nm.get(x).substring(8,12) + "...";
+            myButton.setText(subcadena);//Adentro de los parentesis deberia ir: Nm.get(x).get(0)
+            myButton.setLayoutParams(new LinearLayout.LayoutParams(10, 10));
             LinearLayout ll = new LinearLayout(this);
-            myButton.setLayoutParams(new LinearLayout.LayoutParams(20, 10));
 
             if (materias2[x] == 1) {
                 ll = findViewById(R.id.hora0);
@@ -68,8 +70,6 @@ public class Horario extends AppCompatActivity {
             }
 
             TableRow.LayoutParams lp = new TableRow.LayoutParams(materias2[x]);
-            ll.setMinimumHeight(150);
-            ll.setMinimumWidth(150);
             ll.addView(myButton, lp);
             ll.setOnClickListener(new View.OnClickListener() {
                 @Override
