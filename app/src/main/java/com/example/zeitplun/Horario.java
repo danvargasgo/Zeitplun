@@ -56,7 +56,7 @@ public class Horario extends AppCompatActivity {
 
         for (int x = 0; x < Nm.size(); x++) {
             Button myButton = new Button(this);
-            myButton.setText(":/");//Adentro de los parentesis deberia ir: Nm.get(x).get(0)
+            myButton.setText(Nm.get(x));//Adentro de los parentesis deberia ir: Nm.get(x).get(0)
             LinearLayout ll=new LinearLayout(this);
 
 

@@ -8,12 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TableRow;
 import android.widget.Toast;
-
-import com.google.android.gms.common.SignInButton;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -26,7 +22,7 @@ public class CrearHorario extends AppCompatActivity {
     Scanner sc = new Scanner(System.in);
     ArrayList<String> materias = new ArrayList<String>();
     String linea = null;
-    ArrayList<ArrayList<String>> NombreDeLasMaterias=new ArrayList<ArrayList<String>>();
+    ArrayList<String> NombreDeLasMaterias=new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,8 +63,9 @@ public class CrearHorario extends AppCompatActivity {
        // }
         else{
           //  materias13[numaterias] = partes.get(4);
-            NombreDeLasMaterias.get(4).get(5);
-            ArrayList<String>NDLM=new ArrayList<String>();
+            NombreDeLasMaterias.add(partes.get(4));
+
+          /*  ArrayList<String>NDLM=new ArrayList<String>();
             int x = 4;
             while (x < partes.size()) {
 
